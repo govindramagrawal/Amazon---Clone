@@ -1,12 +1,11 @@
-const Sign_in_box = document.querySelector(".Sign_in_box")
-
-function show_side_bar(){
-    Sign_in_box.classList.add("active");
-    Sign_in_box.style.left = "0px";
+function show_side_bar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.add("active");
+    sidebar.style.left = "0px";
 }
 
-const cross = document.querySelector(".cross")
-
-function hide_side_bar(){
-    Sign_in_box.style.left = "-350px";
+function hide_side_bar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.style.left = "-350px";
+    sidebar.classList.remove("active");
 }
